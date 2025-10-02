@@ -1,0 +1,82 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        display: ['Poppins', 'sans-serif'],
+      },
+      colors: {
+        primary: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
+        },
+        secondary: {
+          50: '#faf5ff',
+          100: '#f3e8ff',
+          200: '#e9d5ff',
+          300: '#d8b4fe',
+          400: '#c084fc',
+          500: '#a855f7',
+          600: '#9333ea',
+          700: '#7e22ce',
+          800: '#6b21a8',
+          900: '#581c87',
+        },
+        accent: {
+          50: '#fdf4ff',
+          100: '#fae8ff',
+          200: '#f5d0fe',
+          300: '#f0abfc',
+          400: '#e879f9',
+          500: '#d946ef',
+          600: '#c026d3',
+          700: '#a21caf',
+          800: '#86198f',
+          900: '#701a75',
+        },
+        luxury: {
+          blue: '#3b82f6',
+          purple: '#a855f7',
+          pink: '#d946ef',
+          indigo: '#6366f1',
+          violet: '#8b5cf6',
+          fuchsia: '#e879f9',
+        },
+      },
+      backgroundImage: {
+        'gradient-primary': 'linear-gradient(135deg, #3b82f6 0%, #2563eb 50%, #1d4ed8 100%)',
+        'gradient-secondary': 'linear-gradient(135deg, #a855f7 0%, #9333ea 50%, #7e22ce 100%)',
+        'gradient-accent': 'linear-gradient(135deg, #d946ef 0%, #c026d3 50%, #a21caf 100%)',
+        'gradient-luxury': 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 25%, #a855f7 50%, #c084fc 75%, #d946ef 100%)',
+        'gradient-blue': 'linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%)',
+        'gradient-purple': 'linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #9333ea 100%)',
+        'gradient-pink': 'linear-gradient(135deg, #f0abfc 0%, #d946ef 50%, #c026d3 100%)',
+        'gradient-royal': 'linear-gradient(135deg, #3b82f6 0%, #6366f1 25%, #8b5cf6 50%, #a855f7 75%, #d946ef 100%)',
+        'gradient-overlay': 'linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75))',
+        'gradient-mesh': 'radial-gradient(at 0% 0%, rgb(59, 130, 246) 0px, transparent 50%), radial-gradient(at 50% 0%, rgb(139, 92, 246) 0px, transparent 50%), radial-gradient(at 100% 0%, rgb(217, 70, 239) 0px, transparent 50%)',
+      },
+      backdropBlur: {
+        xs: '2px',
+      },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
+        'glass-lg': '0 12px 48px 0 rgba(31, 38, 135, 0.2)',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
+    },
+  },
+  plugins: [],
+};
